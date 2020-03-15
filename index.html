@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>COVID - 19</title>
+  </head>
+  <body>
+    <div class="title"><div class="t">Covid - 19</div></div>
+    <div class="global">
+      <div class="confirmed countup">
+        <div id="confirmed" class="up">0</div>
+        confirmed
+      </div>
+      <div class="recovered countup">
+        <div id="recovered" class="up">0</div>
+        recovered
+      </div>
+      <div class="deaths countup">
+        <div id="deaths" class="up">0</div>
+        deaths
+      </div>
+    </div>
+
+    <div class="margin_input">
+      <input
+        type="text"
+        id="load_input"
+        max="250"
+        value="50"
+        onchange="handleLoadmapData()"
+      />
+      <div class="max">max 250</div>
+    </div>
+    <div id="chart"><div class="loading">Loading...</div></div>
+    <div id="loading"></div>
+
+    <div class="cont">
+      <table id="table">
+        <tr>
+          <th>Loading...</th>
+          <th>Loading...</th>
+          <th>Loading...</th>
+          <th>Loading...</th>
+          <th>Loading...</th>
+        </tr>
+      </table>
+    </div>
+
+    <script src="index.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/countup@1.8.2/dist/countUp.min.js"></script>
+
+    <script src="https://www.amcharts.com/lib/4/core.js"></script>
+    <script src="https://www.amcharts.com/lib/4/maps.js"></script>
+    <script src="https://www.amcharts.com/lib/4/geodata/worldLow.js"></script>
+    <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+
+    <script src="map.js"></script>
+  </body>
+</html>
